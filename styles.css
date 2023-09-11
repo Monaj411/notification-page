@@ -1,0 +1,53 @@
+  body {
+    font-family:[Plus Jakarta Sans];
+    src: url(https://fonts.google.com/specimen/Plus+Jakarta+Sans);
+    font-size: 16px;
+  } 
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.avatar {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  color: white;
+  margin-left: 20px;
+}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+
+
+  .header-tag {
+    color: hsl(211, 68%, 94%);
+    margin-right: 10px;
+  }
+
+  .new-comment__section {
+    background-color: red;
+    margin: 10px;
+    display: flex;
+    border-radius: 8px;
+  }
+
+  .sender {
+    display: block;
+    text-align: start;
+    color: yellowgreen;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
