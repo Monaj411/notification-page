@@ -14,6 +14,76 @@
   
 }
 
+h3 {
+  display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-weight: bold;
+}
+
+@media screen and (min-width:700px){
+  h3 {
+    display: block;
+      font-size: 2em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      font-weight: bold;
+  }
+}
+
+@media screen and (min-width:1024px){
+  h3 {
+    display: block;
+      font-size: 2em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      font-weight: bold;
+      margin-top: 45px;
+  }
+}
+
+.header-number {
+  background-color: hsl(219, 85%, 26%);
+  display: inline-block;
+  border: 2px;
+  border-radius: 3px;
+  color: hsl(0, 0%, 100%);
+  width: 20px;
+  height: 15px;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+@media screen and (min-width:700px){
+  .header-number {
+    background-color: hsl(219, 85%, 26%);
+    display: inline-block;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    width: 33px;
+    height: 28px;
+    text-align: center;
+    font-size: 25px;
+  
+  }
+  
+}
+
+@media screen and (min-width:1024px){
+  .header-number {
+    background-color: hsl(219, 85%, 26%);
+    display: inline-block;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    width: 50px;
+    height: 38px;
+    text-align: center;
+    font-size: 35px;
+  
+  }  
+  }
 
 
 header {
@@ -35,12 +105,14 @@ header {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    width: 1100px;
+    width: 1300px;
 
   }
 }
 
-
+.name {
+ font-weight: bolder;
+}
 
 
 article {
@@ -55,7 +127,7 @@ article {
 
 @media screen and (min-width:1024px){
   article {
-    width: 1100px;
+    width: 1300px;
   }
 }
 
@@ -91,28 +163,122 @@ article {
 }
 }
 
+.avatar-chess {
+  margin-left: 20px;
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+  padding-bottom: 10px;
+  margin-left: 100px;
+}
+
+@media screen and (min-width:700px){
+  .avatar-chess {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70px;
+  height: 70px;
+  margin-left: 100px;
+
+  }
+}
+
+
+@media screen and (min-width:1024px) {
+  .avatar-chess {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 120px;
+  height: 120px;
+  margin-left: 133px;
+
+}
+}
+
+
 p {
   color: rgb(20, 19, 19);
   margin-left: 20px;
 }
 
-.msg {
-  color: red;
-  margin-left: 0px;
+@media screen and (min-width:700px){
+  p {
+    color: rgb(20, 19, 19);
+    margin-left: 20px;
+    font-size: 20px;
+  }
 }
 
+@media screen and (min-width:1024px) {
+  p {
+    color: rgb(20, 19, 19);
+    margin-left: 20px;
+    font-size: 25px;
+  }
+}
+
+
+.msg {
+  font-size: 15px;
+  margin: 0px;
+  padding: 20px;
+}
+
+@media screen and (min-width:700px){
+  .msg {
+    font-size: 25px;
+    margin: 0px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .msg {
+    margin: 0px;
+    font-size: 35px;
+    padding: 20px;
+  
+
+  }
+}
  
 
   .header-tag {
-    color: hsl(211, 68%, 94%);
+    color: hsl(219, 85%, 26%);
     margin-right: 10px;
+    font-size: 16px;
   }
+
+
+
+  @media screen and (min-width:700px){
+    .header-tag {
+      color: hsl(219, 85%, 26%);
+      margin-right: 10px;
+      font-size: 25px;
+    }
+
+  }
+
+
+  @media screen and (min-width:1024px) {
+    .header-tag {
+      color: hsl(219, 85%, 26%);
+      margin-right: 20px;
+      font-size: 35px;
+    }
+  }
+
+
   @media screen and (min-width:1024px){}
   .new-notification {
     background-color: hsl(210, 60%, 98%);
     margin: 10px;
     display: flex;
     border-radius: 8px;
+    margin-top: 0px;
   }
 
   .comment-section{
@@ -130,13 +296,16 @@ p {
     padding-top: 0px;
   }
 
+  .section:hover {
+    background-color: hsl(205, 33%, 90%);
+    cursor: pointer;
+  }
   .section {
     border: 1px solid hsl(219, 12%, 42%);
     margin-left: 135px;
     width: 243px;
-    height: 170px;
+    height: 120px;
     border-radius: 8px;
-
   }
 
   @media screen and (min-width:700px){
@@ -144,7 +313,7 @@ p {
       border: 1px solid hsl(219, 12%, 42%);
       margin-left: 135px;
       width: 600px;
-      height: 200px;
+      height: 125px;
       border-radius: 8px;
       margin-right: 20px;
 
@@ -155,9 +324,9 @@ p {
   @media screen and (min-width:1024px){
     .section {
       border: 1px solid hsl(219, 12%, 42%);
-      margin-left: 135px;
-      width: 900px;
-      height: 200px;
+      margin-left: 170px;
+      width: 1060px;
+      height: 160px;
       border-radius: 8px;
       margin-right: 20px;
 
@@ -165,4 +334,9 @@ p {
 
   }
 
+.time {
+  display: block;
+  color: hsl(219, 12%, 42%);
+
+}  
 
